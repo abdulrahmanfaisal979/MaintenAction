@@ -26,16 +26,11 @@ READING_LOG_FILE = "maintenaction_readings.csv"
 # Save one diagnostic row for every prediction window.
 WINDOW_LOG_FILE = "maintenaction_windows.csv"
 
-# You can keep using your latest model/preprocessing files.
-# IMPORTANT:
-# - If the model still contains an "idle" output, this app IGNORES that output.
-# - Idle is decided ONLY by the rule below.
-MODEL_PATH = "best_cnn_lstm_accuracy12.keras"
-PREPROCESSING_PATH = "imu_preprocessing12.npz"
+MODEL_PATH = "models/best_cnn_lstm_accuracy12.keras"
+PREPROCESSING_PATH = "models/imu_preprocessing12.npz"
 
 # Dedicated sequence model for the three between-wrench moves.
-# Place this .joblib file in the same folder as the Streamlit app.
-CROSS_ADJ_MODEL_PATH = "cac_aca_logistic_model.joblib"
+CROSS_ADJ_MODEL_PATH = "models/cac_aca_logistic_model.joblib"
 
 # =========================================================
 # SMOOTHING / CONFIRMATION
